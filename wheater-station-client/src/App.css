@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.component {
+  margin: 0.5em;
+}
+.gauges {
+  display: grid;
+  gap: 0 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+  grid-template-rows: auto;
+}
+
+.data-grid {
+  margin: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .component {
+    padding: 0;
+    margin: 0;
+    max-width: 360px;
+  }
+  .data-grid {
+    padding: 0;
+    margin: 0;
+  }
+}
